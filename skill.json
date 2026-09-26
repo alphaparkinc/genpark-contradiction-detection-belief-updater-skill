@@ -1,0 +1,37 @@
+{
+  "name": "genpark-contradiction-detection-belief-updater-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Epistemic belief state updater and contradiction detector resolving knowledge graph assertion conflicts across time.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "alphaparkinc",
+  "category": "agent-memory",
+  "tags": [
+    "belief-update",
+    "contradiction-detection",
+    "epistemic-logic",
+    "knowledge-graph",
+    "agent-consistency"
+  ],
+  "inputs": {
+    "entity_key": {
+      "type": "string",
+      "default": "user_primary_residence"
+    }
+  },
+  "outputs": {
+    "resolution_id": {
+      "type": "string"
+    },
+    "contradiction_detected": {
+      "type": "boolean"
+    },
+    "current_active_belief_state": {
+      "type": "string"
+    },
+    "resolution_verdict": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
